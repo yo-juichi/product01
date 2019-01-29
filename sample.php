@@ -4,7 +4,7 @@ class Calc
 {
 	function __construct(){}
 
-	public function add($a, $b)
+	public function add_taka($a, $b)
 	{
 		$c = $a + $b;
 		return $c;
@@ -18,12 +18,13 @@ class Calc
 
                 $c = $a - $b;
                 return $c;
-        }
+	}
+	
 }
 
 $calc = new Calc();
 
-echo $calc->add(5,7);
+echo $calc->add_taka(5,7);
 echo "\n";
 
 echo $calc->diff(5,2);
